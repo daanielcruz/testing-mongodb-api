@@ -29,4 +29,6 @@ app.use(
 
 app.use("/", gradeRouter);
 
-app.listen(process.env.PORT || 8081, () => {});
+app.listen(process.env.PORT || 8081, () => {
+  console.log(`Api started at ${process.env.PORT}`);
+});
